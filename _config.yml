@@ -1,4 +1,7 @@
 
+include: ["hant/_pages","eng/_pages"]
+permalink: /:title/
+
 # Plugins
 plugins: 
   - jekyll-feed

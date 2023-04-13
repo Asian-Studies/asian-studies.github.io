@@ -16,6 +16,9 @@
                     {% endfor %}
                     </span>
                 </span>
+                <span class="text-muted">
+		        {{ post.date | date: '%Y 年 %m 月 %d 日' }}
+	            </span>
             </span>
             </li>                
         {% endif %}

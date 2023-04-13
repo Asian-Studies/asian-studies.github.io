@@ -1,8 +1,4 @@
 
-
-include: ["hant/_pages"]
-permalink: /:title/
-
 # Plugins
 plugins: 
   - jekyll-feed
@@ -25,15 +21,12 @@ authors:
       avatar:         /assets/images/avatar2.jpg
       bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
       email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
- 
-
-      
-
+      twitter:        https://twitter.com/wowthemesne
 
 # Paginate
 paginate: 10
 paginate_path: "/hant/page:num/"
+paginate_path: "/eng/page:num/"
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]

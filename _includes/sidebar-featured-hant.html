@@ -9,13 +9,6 @@
                 <h6 class="font-weight-bold">
                     <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>
                 </h6>
-                <span class="d-block text-muted">
-                    分類： <span class="catlist">
-                    {% for tag in post.tags %}
-                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a><span class="sep">, </span>
-                    {% endfor %}
-                    </span>
-                </span>
                 <span class="text-muted">
 		        {{ post.date | date: '%Y 年 %m 月 %d 日' }}
 	            </span>

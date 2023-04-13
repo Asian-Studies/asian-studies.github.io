@@ -42,7 +42,7 @@ defaults:
   - scope:
       path: "hant/_posts"
     values:
-      layout: post
+      layout: post-hant
       author: sal
       avatar: hant/assets/images/avatar1.jpg
       
@@ -50,7 +50,7 @@ defaults:
   - scope:
       path: "hant/_pages"
     values:
-      layout: page
+      layout: page-hant
       
 # Syntax
 markdown: kramdown

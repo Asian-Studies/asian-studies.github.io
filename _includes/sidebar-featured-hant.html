@@ -2,6 +2,7 @@
     <h4 class="font-weight-bold spanborder"><span>學術活動</span></h4>  
     <ol class="list-featured">				
         {% for post in site.posts %} 
+        {% if post.tags contains "Event" %}
         {% if post.tags contains "繁體" %}
             <li class="mb-4">
             <span>
@@ -17,6 +18,7 @@
                 </span>
             </span>
             </li>                
+        {% endif %}
         {% endif %}
         {% endfor %}   
     </ol>

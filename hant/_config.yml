@@ -1,14 +1,14 @@
 # Site
 name: '香港珠海學院亞洲研究中心'
 description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-baseurl: '/hant'
+logo: 'hant/assets/images/logo.png'
+favicon: 'hant/assets/images/favicon.ico'
+baseurl: 'hant/'
 disqus: 'demowebsite'
 email: 'wowthemesnet@gmail.com'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
-include: ["_pages"]
+include: ["hant/_pages"]
 permalink: /:title/
 
 # Plugins
@@ -40,15 +40,15 @@ defaults:
 
   # all posts
   - scope:
-      path: "_posts"
+      path: "hant/_posts"
     values:
       layout: post
       author: sal
-      avatar: /assets/images/avatar1.jpg
+      avatar: hant/assets/images/avatar1.jpg
       
   # all pages
   - scope:
-      path: "_pages"
+      path: "hant/_pages"
     values:
       layout: page
       

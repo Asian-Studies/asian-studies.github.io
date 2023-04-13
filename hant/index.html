@@ -17,6 +17,8 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 <div class="row remove-site-content-margin">
     
     <!-- latest post -->
+    {% for post in site.posts %} 
+    {% if post.tags contains "繁體" %}  
     {% assign latest_post = site.posts[0] %}
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
@@ -45,6 +47,8 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     </div>
     </div>
     </div>
+    {% endif %}
+    {% endfor %}
     
     <div class="col-md-6">
         
@@ -103,7 +107,8 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
             </div>
         
         <!-- fourth latest post -->
-        {%- assign fourth_post = site.posts[3] -%}        
+        {% for post in site.posts %} 
+        {% if post.tags contains "繁體" %}       
         <div class="mb-3 d-flex align-items-center">                
                 {% if fourth_post.image %}
                 <div class="col-md-4">
@@ -114,7 +119,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                 {% endif %}                
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">關於亞洲研究中心</a>
+                    <a class="text-dark" href="{{site.baseurl}}{{fourth_post.url}}">聯絡我們</a>
                     </h2>
                     <small class="d-block text-muted">
                         In <span class="catlist">
@@ -128,6 +133,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
                     </small>
                 </div>
             </div>
+
         
     </div>
     
@@ -140,11 +146,11 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">{{post.title}}</h1>
+                <h1 class="mb-3">關於亞洲研究中心</h1>
                 <p class="mb-3 lead">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
-                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">了解更多</a>
             </div>
             <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/{{ post.image }});">	
             </div>
@@ -173,7 +179,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
         {% for post in paginator.posts %}
         
-            {% include main-loop-card.html-hant %}
+            {% include main-loop-card-hant.html %}
         
         {% endfor %}
         

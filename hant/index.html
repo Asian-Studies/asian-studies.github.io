@@ -198,7 +198,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 		        </span>
 	        </small>
 	        <small class="text-muted">
-		        {{ post.date | date: '%b %d, %Y' }}
+		        {{ post.date | date: '%Y 年 %m 月 %d 日' }}
 	        </small>
         </div>
         {% if post.image %}
@@ -209,6 +209,8 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 	        </div>
         {% endif %}
         </div>
+	{% endif %}
+	{% endfor %}
         
         
         <div class="mt-5">

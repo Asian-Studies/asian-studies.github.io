@@ -136,12 +136,13 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
+{% if post.tags contains "繁體" %}
+{% if post.tags contains "About" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">關於亞洲研究中心</h1>
+                <h1 class="mb-3">{{post.title}}</h1>
                 <p class="mb-3 lead">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
                 </p>
@@ -152,6 +153,7 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
         </div>
     </div>
 </div> 
+{% endif %}
 {% endif %}
 {% endfor %}
 

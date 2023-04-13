@@ -43,7 +43,6 @@ defaults:
       path: "hant/_posts"
     values:
       layout: post-hant
-      author: sal
       avatar: hant/assets/images/avatar1.jpg
       
   # all pages
@@ -58,7 +57,7 @@ highlighter: rouge
 
 # Paginate
 paginate: 10
-
+paginate_path: "hant/page:num/"
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)

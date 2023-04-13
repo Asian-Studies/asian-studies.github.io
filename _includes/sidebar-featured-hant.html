@@ -10,8 +10,8 @@
                 </h6>
                 <span class="d-block text-muted">
                     In <span class="catlist">
-                    {% for category in post.categories %}
-                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>
+                    {% for tag in post.tags %}
+                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a><span class="sep">, </span>
                     {% endfor %}
                     </span>
                 </span>

@@ -57,7 +57,7 @@ highlighter: rouge
 
 # Paginate
 paginate: 10
-paginate_path: "hant/page:num/"
+paginate_path: "/hant/page:num/"
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)

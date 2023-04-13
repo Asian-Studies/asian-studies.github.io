@@ -1,7 +1,7 @@
 ---
 layout: page-hant
 title:  "亞洲研究中心簡介"
-tags: [繁體]
+tags: [ 繁體, About ]
 image: assets/images/demo1.jpg
 ---
 

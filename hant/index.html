@@ -42,27 +42,17 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
     
     <div class="col-md-6">
         
-        <!-- 《亞洲研究》稿約 -->
-        {%- assign second_post = site.posts[1] -%}        
+        <!-- 《亞洲研究》稿約 -->     
         <div class="mb-3 d-flex align-items-center">                
-                {% if second_post.image %}
                 <div class="col-md-4">
-                <a href="{{site.baseurl}}{{second_post.url}}">
-                 <img class="w-100" src="{% if second_post.image contains "://" %}{{ second_post.image }}{% else %}{{ second_post.image | absolute_url }}{% endif %}" alt="{{ second_post.title }}">
+                <a href="{{site.baseurl}}/亞洲研究-稿約">
+                 <img class="w-100" src="assets/images/17.jpg" alt="《亞洲研究》稿約">
                 </a>
-                </div>
-                {% endif %}                
+                </div>             
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{second_post.url}}">《亞洲研究》稿約</a>
+                    <a class="text-dark" href="{{site.baseurl}}/亞洲研究-稿約">《亞洲研究》稿約</a>
                     </h2>
-                    <small class="d-block text-muted">
-                        分類： <span class="catlist">
-                        {% for tag in second_post.tags %}
-                        <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag }}</a><span class="sep">, </span>
-                        {% endfor %}
-                        </span>                   
-                    </small>
                     <small class="text-muted">
                         {{ second_post.date | date: '%Y 年 %m 月 %d 日' }}
                     </small>

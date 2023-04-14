@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: page-sidebar-hant
-permalink: "/about.html"
+permalink: "/about-hant.html"
 image: "/assets/images/screenshot.jpg"
 comments: true
 ---

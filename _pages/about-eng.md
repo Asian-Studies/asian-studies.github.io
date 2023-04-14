@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: page-sidebar-eng
-permalink: "/about.html"
+permalink: "/about-eng.html"
 image: "/assets/images/screenshot.jpg"
 comments: true
 ---

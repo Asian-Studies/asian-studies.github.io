@@ -1,3 +1,5 @@
+name: '香港珠海學院亞洲研究中心'
+logo: 'assets/images/logo.png'
 
 include: ["_pages"]
 permalink: /:title/

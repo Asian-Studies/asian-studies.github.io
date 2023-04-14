@@ -1,6 +1,6 @@
 ---
 title: "About"
-layout: page-sidebar
+layout: page-sidebar-hant
 permalink: "/about.html"
 image: "/assets/images/screenshot.jpg"
 comments: true

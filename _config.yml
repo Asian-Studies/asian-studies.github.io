@@ -1,5 +1,5 @@
 
-include: ["hant/_pages","eng/_pages"]
+include: ["_pages"]
 permalink: /:title/
 
 # Plugins
